@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333333;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* スマホ対応で折り返し */
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+header ul li a {
+    color: #FFFFFF;
+    font-size: 18px; /* スマホ用に少し小さめに */
+    
+}
+
+header img {
+    height: 30px;
+}
+
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top {
+    background-color: #000000;
+    background-size: cover;
+    padding: 100px 0; /* モバイル向けに縮小 */
+    text-align: center;
+}
+
+.top h1 {
+    font-size: 40px; /* フォントサイズをモバイル向けに調整 */
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+
+
+.自己紹介 h2 {
+    font-size: 50px; /* スマホ向けに縮小 */
+    letter-spacing: 3px;
+}
+
+.内容1 {
+    line-height: 2em;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.内容2 img {
+    width: 100%;
+    height: auto;
+}
+
+.内容 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parallax_content {
+    min-height: 300px;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: scroll; /* モバイルでパララックスを無効化 */
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* ヘッダーを縦並びに */
+        align-items: center;
+    }
+
+    .top h1 {
+        font-size: 30px; /* タブレット・スマホ向けにさらに縮小 */
+    }
+
+    .top p {
+        font-size: 18px;
+    }
+
+    .内容 {
+        flex-direction: column;
+    }
+
+    .個人的好きなMVランキング h2, .今登録しているYoutubeチャンネル h1 {
+        font-size: 40px; /* 見出しをモバイル用に調整 */
+    }
+
+    .文章1, .文章2, .文章3 {
+        transform: none; /* 変形をリセット */
+        text-align: center;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+footer ul li a {
+    color: #FFFFFF;
+    font-size: 20px;
+    
+  }
+  footer ul li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+.movie{
+    font-size: 19px;
+}
